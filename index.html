@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub user search</title>
+    <link rel="stylesheet" href="GitHubUserSearch.css">
+    <script defer src="GitHubUserSearch.js"></script>
+</head>
+<body>
+    <header>
+        <h1>devfinder</h1>
+        <button id="theme-toggle" onclick="toggleTheme()">
+            <span id="theme-icon" class="icon-sun"></span> Light
+        </button>
+    </header>
+    <div class="search-container">
+        <input type="text" id="username" placeholder="Search GitHub username...">
+        <button onclick="getUser()">Search</button>
+    </div>
+    <div id="user-card" class="card d-none">
+        <button class="close-button" onclick="closeMe()">X</button>
+        <img id="profile-img" src="user-icon.jpg" alt="Profile Image">
+        <h2 id="user-name"></h2>
+        <a id="user-link" href="" target="_blank">@<span id="user-username"></span></a>
+        <p id="user-bio"></p>
+        <div class="stats-container">
+            <div class="stats">
+                <div><strong>Repos:</strong> <span id="user-repos"></span></div>
+                <div><strong>Followers:</strong> <span id="user-followers"></span></div>
+                <div><strong>Following:</strong> <span id="user-following"></span></div>
+            </div>
+        </div>
+        <a id="github-link" href="" target="_blank">GitHub Profile</a>
+        <a id="user-company" href="" target="_blank">company<span id="user-company"></span></a>
+        <a id="user-location" href="" target="_blank">location<span id="user-location"></span></a>
+        <a id="user-twitter" href="" target="_blank">twitter<span id="user-twitter"></span></a>
+    </div>
+</body>
+</html>

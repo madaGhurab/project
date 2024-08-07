@@ -1,0 +1,137 @@
+/* Default dark theme */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #07084d;
+    color: #e1d9d9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    margin-top: 20px;
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.card {
+    margin-top: 20px;
+    padding: 20px;
+    background: rgb(255, 255, 255);
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+}
+
+.card.d-none {
+    display: none;
+}
+
+.close-button {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+#profile-img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
+.stats-container {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 10px 0;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.stats {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 16px;
+    color: #333;
+}
+
+.stats div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.stats strong {
+    font-weight: bold;
+}
+
+/* Light theme */
+body.light-theme {
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+.card.light-theme {
+    background: #ffffff;
+}
+
+button.light-theme {
+    background-color: #007bff;
+}
+
+button.light-theme:hover {
+    background-color: #0056b3;
+}
+
+/* Icons and button styling */
+#theme-toggle {
+    display: flex;
+    align-items: center;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+#theme-icon {
+    font-size: 1.5rem;
+    margin-right: 8px;
+}
+
+.icon-sun::before {
+    content: '☀️'; /* Sun icon */
+}
+
+.icon-moon::before {
+    content: '🌙'; /* Moon icon */
+}
